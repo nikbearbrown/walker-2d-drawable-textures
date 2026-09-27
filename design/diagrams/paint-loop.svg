@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="620" viewBox="0 0 1400 620" role="img" aria-labelledby="t d">
+<title id="t">Recovered paint loop: walker-2d-drawable-textures</title>
+<desc id="d">Choose tool, drag on canvas, GPU blit into one DrawableTexture2D shared by canvas and 3D mesh. Dashed: save/clear/undo not in code. M-01..M-06, S-01, S-02.</desc>
+<rect width="1400" height="620" fill="#faf9f5"/>
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#25354a"/></marker></defs>
+<g font-family="Helvetica, Arial, sans-serif" fill="#25354a">
+<text x="40" y="50" font-size="30" font-weight="700">Paint loop · S-01 → S-02</text>
+<text x="40" y="78" font-size="15" fill="#5b6b7c">solid = observed (main.gd, main.tscn) · dashed = proposed, not in code</text>
+<g stroke="#25354a" stroke-width="2.5" fill="#fffdf7">
+<rect x="40" y="140" width="290" height="130" rx="10"/><rect x="390" y="140" width="290" height="130" rx="10"/><rect x="740" y="140" width="290" height="130" rx="10"/><rect x="1080" y="140" width="290" height="130" rx="10"/>
+</g>
+<g font-size="20" font-weight="700" text-anchor="middle"><text x="185" y="180">Choose tool</text><text x="535" y="180">Drag on canvas</text><text x="885" y="180">blit_rect</text><text x="1225" y="180">See it on mesh</text></g>
+<g font-size="14" text-anchor="middle" fill="#5b6b7c">
+<text x="185" y="208">9 swatches / Godot stamp</text><text x="185" y="228">size slider 5–64–100</text><text x="185" y="248">M-03, M-04, M-05</text>
+<text x="535" y="208">left = paint (M-01)</text><text x="535" y="228">right = erase (paints white, M-02)</text><text x="535" y="248">_on_canvas_gui_input</text>
+<text x="885" y="208">DrawableTexture2D 500×500</text><text x="885" y="228">one texture, shared</text><text x="885" y="248">main.gd:77-89</text>
+<text x="1225" y="208">cube or sphere (M-06)</text><text x="1225" y="228">same material sub-resource</text><text x="1225" y="248">SubViewport</text>
+</g>
+<g stroke="#25354a" stroke-width="2" fill="none" marker-end="url(#a)"><path d="M330 205 H380"/><path d="M680 205 H730"/><path d="M1030 205 H1070"/><path d="M1225 270 Q700 380 185 280"/></g>
+<text x="620" y="360" font-size="14" fill="#5b6b7c">next stroke</text>
+<rect x="390" y="440" width="640" height="80" rx="8" fill="none" stroke="#d24e42" stroke-width="2.5" stroke-dasharray="10 7"/>
+<text x="710" y="487" font-size="16" text-anchor="middle" fill="#d24e42">save / export / clear / undo: none exist · Q-01</text>
+</g>
+</svg>

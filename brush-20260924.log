@@ -1,0 +1,21 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+INITIAL slider=64.0 brush=64 eraser=64
+PASS initial brush and eraser match slider
+PASS canvas shares drawable texture
+PASS both meshes share canvas texture
+PASS stamp GUI click selects logo
+PASS swatch GUI click ColorRect1
+PASS swatch GUI click ColorRect2
+PASS swatch GUI click ColorRect3
+PASS swatch GUI click ColorRect4
+PASS swatch GUI click ColorRect5
+PASS swatch GUI click ColorRect6
+PASS swatch GUI click ColorRect7
+PASS swatch GUI click ColorRect8
+PASS swatch GUI click ColorRect9
+PASS keyboard brush size 100
+PASS keyboard brush size 5
+PASS focused Enter toggles mesh SphereButton
+PASS focused Enter toggles mesh CubeButton
+HEADLESS STATE ONLY; GPU painting, erasing, stamp pixels and films unverified. failures=0
